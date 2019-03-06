@@ -1,0 +1,26 @@
+import React from "react"
+
+import Headings from "./Headings"
+import TBody from "./TBody"
+
+export default props => {
+
+  let classes_ = "table table-hover"
+  if (props.classes) classes_ += " " + props.classes
+
+  let headings_ = null
+  if (props.headings) headings_ = (
+    <thead>
+      <tr>
+        <Headings headings={props.headings} />
+      </tr>
+    </thead>
+  )
+
+  return (
+    <table className={classes_}>
+      {headings_}
+      <TBody classes={props.classes} rows={props.rows} />
+    </table>
+  )
+}
