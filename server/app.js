@@ -2,8 +2,6 @@
 
 "use strict"
 
-require("module-alias/register")
-
 const importLazy = require("import-lazy")(require)
 
 const express = require("express")
@@ -23,8 +21,8 @@ const { db } = require("./db").init()
 // ... in 'ffba-auth'
 require("ffba-auth").init({ db })
 
-const route_auth = require("@routes/auth")
-const route_sales = importLazy("@routes/sales")
+const route_auth = require("./routes/auth")
+const route_sales = importLazy("./routes/sales")
 
 
 //

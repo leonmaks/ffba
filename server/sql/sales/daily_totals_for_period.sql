@@ -1,5 +1,5 @@
 SELECT
-  s.sales_date::date AS sales_date,
+  to_char (s.sales_date::date, 'YYYY-MM-DD') AS sales_date,
   cr.identity AS cashreg_ident,
   cr.id AS cashreg_id,
   s.payment AS payment,
@@ -27,7 +27,7 @@ FROM
   v$_product_sales s
 WHERE
   cr.siteguid = s.siteguid
-  AND s.sales_date::date between ${date0} AND ${date1}
+  AND s.sales_date::date between ${date_0} AND ${date_1}
 GROUP BY
   s.sales_date::date,
   coalesce(cr.show_order, cr.identity),
