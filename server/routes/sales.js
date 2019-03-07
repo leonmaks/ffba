@@ -1,18 +1,17 @@
+"use strict"
+
 const router = require("express-promise-router")()
+// ?? const validateBody = require("@helpers/validateBody")
 
-// const { signUpSchema, signInSchema } = require("@schemas/auth")
-
-// const validateBody = require("@services/validateBody")
-const { passportJWT } = require("@services/passport")
+const { passport } = require("ffba-auth")
 
 const salesController = require("@controllers/sales")
 
-// const dummy = require("@controllers/dummy")
 
-
-router.route("/daily-totals-for-period-api")
-  // .get(passportJWT, dummy.dummy)
-  .get(passportJWT, salesController.dailyTotalsForPeriod_api)
+router.route("/daily-totals-for-period").get(
+  passport.JWT,
+  salesController.daily_totals_for_period
+)
 
 
 module.exports = router
