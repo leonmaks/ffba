@@ -7,7 +7,23 @@ SELECT
   SUM(s.actual_sales_value) AS act_sv,
   SUM(s.discount_value) AS dis_sv
 FROM
-  ffba_cashreg cr,
+  (
+  SELECT
+    identity,
+    id,
+    siteguid,
+    show_order
+  FROM
+    ffba_cashreg
+  UNION ALL
+  SELECT
+    ident,
+    id,
+    siteguid,
+    show_order
+  FROM
+    ffba_pos
+  ) AS cr,
   v$_product_sales s
 WHERE
   cr.siteguid = s.siteguid
