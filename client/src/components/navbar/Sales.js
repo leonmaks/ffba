@@ -6,12 +6,18 @@ import { ROUTE_SALES } from "routes"
 
 
 export default props => (
-  <Allow group="sales">
-    <li className="nav-item">
-      <Link className="nav-link" to={ROUTE_SALES}>Sales</Link>
-    </li>
-  </Allow>
+  <li className="nav-item">
+    <Link className="nav-link" to={ROUTE_SALES}>Sales</Link>
+  </li>
 )
+
+
+//  <Allow group="sales">
+//    <li className="nav-item">
+//      <Link className="nav-link" to={ROUTE_SALES}>Sales</Link>
+//    </li>
+//  </Allow>
+
 
 
 
