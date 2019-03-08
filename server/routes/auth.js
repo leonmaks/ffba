@@ -5,9 +5,11 @@ const validateBody = require("../helpers/validateBody")
 
 const auth = require("ffba-auth")
 
+const { req_log } = require("../controllers/dummy")
 const authController = require("../controllers/auth")
 
 router.route("/signin").post(
+  req_log,
   validateBody(auth.userSchema.signIn),
   auth.passport.local,
   authController.signIn

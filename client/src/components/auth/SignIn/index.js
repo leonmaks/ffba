@@ -4,7 +4,7 @@ import { compose } from "redux"
 import { connect } from "react-redux"
 
 import Styles from "./Styles"
-import { COPYRIGHT_YEARS } from "settings"
+import { COPYRIGHT_YEARS } from "defs"
 import * as authActions from "actions/auth"
 
 

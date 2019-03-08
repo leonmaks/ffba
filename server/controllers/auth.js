@@ -13,7 +13,7 @@ module.exports = {
       const token_ = token.sign(req.user)
 
       // Response with token
-      res.status(200).json({ token_, isSuperuser: req.user.is_superuser })
+      res.status(200).json({ token: token_, isSuperuser: req.user.is_superuser })
 
     } catch (error) {
 

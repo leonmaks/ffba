@@ -1,12 +1,11 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import { Provider } from "react-redux"
-import { createStore, applyMiddleware, compose } from "redux"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
-import thunk from "redux-thunk"
-// import axios from "axios"
 
 import * as serviceWorker from "serviceWorker"
+
+import store from "reducers"
 
 import {
   ROUTE_SALES,
@@ -14,9 +13,6 @@ import {
   ROUTE_SIGNIN,
   ROUTE_ABOUT
 } from "routes"
-
-import reducers from "reducers"
-import { preloadedState as authPreloadedState } from "reducers/auth"
 
 import App from "components/App"
 
@@ -32,28 +28,21 @@ import About from "components/About"
 
 import Page404 from "components/Page404"
 
+//
+// Init REST
+// import { init as initREST } from "rest/rp"
+// initREST()
+
 // import SignUp from "components/SignUp"
 // import Dashboard from "components/Dashboard"
 
 // import authGuard from "./components/HOCs/authGuard"
 
 // const jwtToken = localStorage.getItem("JWT_TOKEN")
-// axios.defaults.headers.common["Authorization"] = jwtToken
-
-
-// const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore)
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-// const store_ = createStoreWithMiddleware(reducers)
-
-// const store_ = createStore(reducers,
-//   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-//   applyMiddleware(thunk));
-
-const store_ = createStore(reducers, { auth: authPreloadedState() }, composeEnhancers(applyMiddleware(thunk)))
 
 
 ReactDOM.render(
-  <Provider store={store_}>
+  <Provider store={store}>
     <BrowserRouter>
       <App>
         <Switch>

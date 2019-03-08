@@ -1,8 +1,7 @@
 import React, { Component } from "react"
-import axios from "axios"
+import { get } from "rest/rp"
 
-import { SERVER_URL } from "settings"
-import { API_ROUTE_DAILY_TOTALS_FOR_PERIOD } from "routes"
+import { SALES_DAILY_TOTALS_FOR_PERIOD } from "rest/defs"
 
 import Dummy from "components/common/Dummy"
 import Table from "components/common/Table"
@@ -146,13 +145,35 @@ class DailyTotals extends Component {
   }
 
   componentDidMount() {
-    axios.get(`${SERVER_URL}${API_ROUTE_DAILY_TOTALS_FOR_PERIOD}`).then(
-      response => {
-        if (response.data.daily_totals) {
-          this.setState({ totals: this.prepareState(response.data.daily_totals) })
-        }
+
+    get(SALES_DAILY_TOTALS_FOR_PERIOD, { json: true }).then(res => {
+      if (res.daily_totals) {
+        this.setState({ totals: this.prepareState(res.daily_totals) })
       }
-    )
+    })
+
+    // const options_ = {
+    //   uri: `${SERVER_URL}${API_ROUTE_DAILY_TOTALS_FOR_PERIOD}`,
+    //   headers: {
+    //     "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJGRkJBIiwic3ViIjoxLCJpYXQiOjE1NTE5MDM1Nzg2MTIsImV4cCI6MTU1MTk4OTk3ODYxMn0.LFAz-sg1LUNIufFxnjwbCoihh81_7vCks6-KJZEtl_E"
+    //   },
+    //   json: true // Automatically parses the JSON string in the response
+    // }
+
+    // rp(options_).then(response => {
+    //   console.log("response=", response)
+    //   if (response.daily_totals) {
+    //     this.setState({ totals: this.prepareState(response.daily_totals) })
+    //   }
+    // })
+
+    // axios.get(`${SERVER_URL}${API_ROUTE_DAILY_TOTALS_FOR_PERIOD}`).then(
+    //     response => {
+    //       if (response.data.daily_totals) {
+    //         this.setState({ totals: this.prepareState(response.data.daily_totals) })
+    //       }
+    //     }
+    //   )
   }
 
   render() {

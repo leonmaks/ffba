@@ -1,6 +1,6 @@
 import React from "react"
 
-import { BRAND_LABEL } from "settings"
+import { BRAND_LABEL } from "defs"
 
 export default (props) => {
   return (
