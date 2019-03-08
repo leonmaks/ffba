@@ -1,6 +1,6 @@
 {
 	"name": "ffba",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "",
 	"main": "app.js",
 	"scripts": {
@@ -18,14 +18,14 @@
 		"dotenv-safe": "^6.1.0",
 		"express": "^4.16.4",
 		"express-promise-router": "^3.0.3",
-		"ffba-auth": "^0.0.6",
+		"ffba-auth": "^0.0.8",
 		"import-lazy": "^3.1.0",
 		"joi": "^14.3.1",
 		"jsonwebtoken": "^8.4.0",
 		"moment": "^2.24.0",
 		"morgan": "^1.9.1",
 		"pg-promise": "^8.5.5",
-		"pg-utl": "^0.0.8",
-		"tittles": "^0.0.6"
+		"pg-utl": "^0.0.9",
+		"tittles": "^0.0.7"
 	}
 }
