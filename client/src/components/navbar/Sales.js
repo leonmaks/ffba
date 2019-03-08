@@ -1,5 +1,5 @@
 import React from "react"
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 import Allow from "components/common/Allow"
 import { ROUTE_SALES } from "routes"
@@ -8,7 +8,7 @@ import { ROUTE_SALES } from "routes"
 export default props => (
   <Allow group="sales">
     <li className="nav-item">
-      <NavLink className="nav-link" to={ROUTE_SALES}>Sales</NavLink>
+      <Link className="nav-link" to={ROUTE_SALES}>Sales</Link>
     </li>
   </Allow>
 )

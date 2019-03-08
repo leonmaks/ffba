@@ -18,7 +18,7 @@ export const signIn = data => {
       console.log("[ActionCreator] got from server:", res_)
 
       // 3) Dispatch 'user just signed in' (with jwtToken)
-      await dispatch(authSignIn(data.username, res_.token, res_.isSuperuser))
+      dispatch(authSignIn(data.username, res_.token, res_.isSuperuser))
 
     } catch (error) {
 
@@ -26,7 +26,7 @@ export const signIn = data => {
       console.log("[ActionCreator] signIn error:", error)
 
       // Sign out in case of error
-      await dispatch(authSignOut())
+      dispatch(authSignOut())
 
       let error_ = null
       if (error.response) {
@@ -41,9 +41,9 @@ export const signIn = data => {
 }
 
 
-export const signOut = async () => {
+export const signOut = () => {
   // console.log("[ActionCreator] signOut")
   return async dispatch => {
-    await dispatch(authSignOut())
+    dispatch(authSignOut())
   }
 }
