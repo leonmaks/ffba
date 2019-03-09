@@ -1,8 +1,8 @@
 //
 // SERVER
-export const SERVER_URL = "http://localhost:8181"
+export const SERVER_URL = "https://eltacafe.ru:8181"
+// export const SERVER_URL = "http://localhost:8181"
 // export const SERVER_URL = "http://localhost:3099"
-// export const SERVER_URL = "https://eltacafe.ru:8181"
 
 //
 // ROUTES

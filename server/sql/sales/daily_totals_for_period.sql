@@ -13,6 +13,7 @@ FROM
   v$_ffba_orgunit_sales s
 WHERE
   p.siteguid = s.siteguid
+  AND s.sales_date::date between ${date_0} AND ${date_1}
 GROUP BY
   s.sales_date::date,
   coalesce(s.orgunit_show_order, s.orgunit_id::text),
