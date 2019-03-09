@@ -1,7 +1,5 @@
-DROP VIEW IF EXISTS v$_pos_path_tree CASCADE;
-
 CREATE OR REPLACE
-   VIEW v$_pos_path_tree AS
+   VIEW v$_ffba_pos_path_tree AS
    WITH RECURSIVE path_tree AS (
       SELECT p0.id, p0.up_id, p0.package_id,
          p0.dir::text AS dir_last, p0.dir::text AS dir_full, p0.file,
@@ -22,6 +20,7 @@ CREATE OR REPLACE
          END
       FROM ffba_pos_path p1
       INNER JOIN path_tree AS p ON p1.up_id = p.id
-   ) SELECT * FROM path_tree;
+   ) SELECT * FROM path_tree
+;
 
 COMMIT;

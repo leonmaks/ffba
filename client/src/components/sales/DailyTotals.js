@@ -15,12 +15,14 @@ class DailyTotals extends Component {
   prepareState = (rows) => {
 
     let sd_ = { ident: null, totals: [0, 0, 0], rows: [] }
-    let cr_ = { ident: null, totals: [0, 0, 0], rows: [], link: null }
+    let un_ = { ident: null, totals: [0, 0, 0], rows: [], link: null }
     let pm_ = { ident: null, totals: [0, 0, 0], rows: [] }
 
     rows.forEach((r, i) => {
 
-      if (sd_.ident !== r["sales_date"] || cr_.ident !== r["cashreg_ident"] || pm_.ident !== r["payment"]) {
+      r.unit_ident = `${r.orgunit_name || "Undefined"} | ${r.cashreg_ident}`
+
+      if (sd_.ident !== r["sales_date"] || un_.ident !== r["unit_ident"] || pm_.ident !== r["payment"]) {
 
         // Payment
         if (pm_.ident) {
@@ -33,35 +35,35 @@ class DailyTotals extends Component {
               { value: pm_.totals[1].toFixed(2) },
               { value: pm_.totals[2].toFixed(2) }
             ],
-            key: sd_.ident + "|" + cr_.ident + "!" + pm_.ident
+            key: sd_.ident + "|" + un_.ident + "!" + pm_.ident
           })
         }
         pm_.ident = r["payment"]
         pm_.totals = [0, 0, 0]
       }
 
-      if (sd_.ident !== r["sales_date"] || cr_.ident !== r["cashreg_ident"]) {
+      if (sd_.ident !== r["sales_date"] || un_.ident !== r["unit_ident"]) {
 
         // Cashreg
-        if (cr_.ident) {
-          cr_.rows.push({
+        if (un_.ident) {
+          un_.rows.push({
             values: [
               { value: "" },
               { value: "", collapsible: true },
-              { value: cr_.ident, link: cr_.link },
-              { value: cr_.totals[0].toFixed(2) },
-              { value: cr_.totals[1].toFixed(2) },
-              { value: cr_.totals[2].toFixed(2) }
+              { value: un_.ident, link: un_.link },
+              { value: un_.totals[0].toFixed(2) },
+              { value: un_.totals[1].toFixed(2) },
+              { value: un_.totals[2].toFixed(2) }
             ],
             group: { rows: pm_.rows },
             // group: { rows: pm_.rows, hidden: true },
-            key: sd_.ident + "|" + cr_.ident
+            key: sd_.ident + "|" + un_.ident
           })
           pm_.rows = []
         }
-        cr_.ident = r["cashreg_ident"]
-        cr_.link = "/sales/date-cashreg/" + r["sales_date"].replace(/-/g, "/") + "/" + r["cashreg_id"]
-        cr_.totals = [0, 0, 0]
+        un_.ident = r["unit_ident"]
+        un_.link = "/sales/date-cashreg/" + r["sales_date"].replace(/-/g, "/") + "/" + r["cashreg_id"]
+        un_.totals = [0, 0, 0]
       }
 
       if (sd_.ident !== r["sales_date"]) {
@@ -76,18 +78,18 @@ class DailyTotals extends Component {
               { value: sd_.totals[1].toFixed(2) },
               { value: sd_.totals[2].toFixed(2) }
             ],
-            group: { rows: cr_.rows },
-            // group: { rows: cr_.rows, hidden: true },
+            group: { rows: un_.rows },
+            // group: { rows: un_.rows, hidden: true },
             key: sd_.ident
           })
-          cr_.rows = []
+          un_.rows = []
         }
         sd_.ident = r["sales_date"]
         sd_.totals = [0, 0, 0]
       }
 
       sd_.totals = [sd_.totals[0] + r["act_sv"], sd_.totals[1] + r["exp_sv"], sd_.totals[2] + r["dis_sv"]]
-      cr_.totals = [cr_.totals[0] + r["act_sv"], cr_.totals[1] + r["exp_sv"], cr_.totals[2] + r["dis_sv"]]
+      un_.totals = [un_.totals[0] + r["act_sv"], un_.totals[1] + r["exp_sv"], un_.totals[2] + r["dis_sv"]]
       pm_.totals = [pm_.totals[0] + r["act_sv"], pm_.totals[1] + r["exp_sv"], pm_.totals[2] + r["dis_sv"]]
     })
 
@@ -102,24 +104,24 @@ class DailyTotals extends Component {
           { value: pm_.totals[1].toFixed(2) },
           { value: pm_.totals[2].toFixed(2) }
         ],
-        key: sd_.ident + "|" + cr_.ident + "!" + pm_.ident
+        key: sd_.ident + "|" + un_.ident + "!" + pm_.ident
       })
     }
 
     // Cashreg (last)
-    if (cr_.ident) {
-      cr_.rows.push({
+    if (un_.ident) {
+      un_.rows.push({
         values: [
           { value: "" },
           { value: "", collapsible: true },
-          { value: cr_.ident, link: cr_.link },
-          { value: cr_.totals[0].toFixed(2) },
-          { value: cr_.totals[1].toFixed(2) },
-          { value: cr_.totals[2].toFixed(2) }
+          { value: un_.ident, link: un_.link },
+          { value: un_.totals[0].toFixed(2) },
+          { value: un_.totals[1].toFixed(2) },
+          { value: un_.totals[2].toFixed(2) }
         ],
         group: { rows: pm_.rows },
         // group: { rows: pm_.rows, hidden: true },
-        key: sd_.ident + "|" + cr_.ident
+        key: sd_.ident + "|" + un_.ident
       })
       pm_.rows = []
     }
@@ -135,11 +137,11 @@ class DailyTotals extends Component {
           { value: sd_.totals[1].toFixed(2) },
           { value: sd_.totals[2].toFixed(2) }
         ],
-        group: { rows: cr_.rows },
-        // group: { rows: cr_.rows, hidden: true },
+        group: { rows: un_.rows },
+        // group: { rows: un_.rows, hidden: true },
         key: sd_.ident
       })
-      cr_.rows = []
+      un_.rows = []
     }
     return { rows: sd_.rows }
   }

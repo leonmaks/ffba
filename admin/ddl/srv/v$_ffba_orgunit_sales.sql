@@ -1,5 +1,6 @@
-CREATE OR REPLACE
-VIEW v$_ffba_orgunit_sales AS
+DROP VIEW IF EXISTS v$_ffba_orgunit_sales;
+
+CREATE VIEW v$_ffba_orgunit_sales AS
 SELECT
   s.siteguid,
   s.product_ref,
@@ -14,16 +15,18 @@ SELECT
   s.actual_sales_value,
   s.discount_value,
   s.discount_rate,
+  s.payment,
   p.identity,
   p.id,
   p.show_order AS pos_show_order,
   o.id AS orgunit_id,
   o.name AS orgunit_name,
   o.up_id AS orgunit_up_id,
+  o.show_order orgunit_show_order,
   ov.fd AS orgunit_fd,
   ov.td AS orgunit_td
 FROM
-  v$_product_sales s
+  v$_ffba_product_sales s
 LEFT JOIN
   v$_ffba_pos p
   ON p.siteguid = s.siteguid
