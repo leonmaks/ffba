@@ -20,7 +20,7 @@ class DailyTotals extends Component {
 
     rows.forEach((r, i) => {
 
-      r.unit_ident = `${r.orgunit_name || "Undefined"} | ${r.cashreg_ident}`
+      r.unit_ident = `${r.orgunit_name || "Undefined"} | ${r.pos_ident}`
 
       if (sd_.ident !== r["sales_date"] || un_.ident !== r["unit_ident"] || pm_.ident !== r["payment"]) {
 
@@ -44,7 +44,7 @@ class DailyTotals extends Component {
 
       if (sd_.ident !== r["sales_date"] || un_.ident !== r["unit_ident"]) {
 
-        // Cashreg
+        // POS
         if (un_.ident) {
           un_.rows.push({
             values: [
@@ -62,7 +62,7 @@ class DailyTotals extends Component {
           pm_.rows = []
         }
         un_.ident = r["unit_ident"]
-        un_.link = "/sales/date-cashreg/" + r["sales_date"].replace(/-/g, "/") + "/" + r["cashreg_id"]
+        un_.link = "/sales/date-pos/" + r["sales_date"].replace(/-/g, "/") + "/" + r["pos_id"]
         un_.totals = [0, 0, 0]
       }
 
@@ -108,7 +108,7 @@ class DailyTotals extends Component {
       })
     }
 
-    // Cashreg (last)
+    // POS (last)
     if (un_.ident) {
       un_.rows.push({
         values: [

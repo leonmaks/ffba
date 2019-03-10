@@ -1,4 +1,4 @@
-DROP VIEW IF EXISTS v$_ffba_orgunit_sales CASCADE;
+DROP VIEW IF EXISTS v$_ffba_orgunit_sales;
 
 CREATE VIEW v$_ffba_orgunit_sales AS
 SELECT
@@ -30,15 +30,13 @@ FROM
 LEFT JOIN
   v$_ffba_pos p
   ON p.siteguid = s.siteguid
-LEFT OUTER JOIN
-  ffba_pos_orgunit_ver ov
-  ON p.pos_id = ov.pos_id
-    AND s.sales_date BETWEEN ov.fd AND COALESCE(ov.td, '9999-12-31 23:59:59.999999')
+LEFT JOIN
+  v$_ffba_pos_orgunit_ver ov
+  ON p.siteguid = ov.siteguid
+    AND s.sales_date >= ov.fd AND s.sales_date < COALESCE(ov.td, '9999-12-31 23:59:59.999999+03'::timestamp with time zone)
 LEFT OUTER JOIN
   ffba_orgunit o
   ON ov.orgunit_id = o.id
 ;
 
 COMMIT;
-
-
