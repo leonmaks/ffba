@@ -1,15 +1,15 @@
 "use strict"
 
 const router = require("express-promise-router")()
-const validateBody = require("../helpers/validateBody")
+const { validateBody } = require("../helpers/schema")
 
 const auth = require("ffba-auth")
 
-const { req_log } = require("../controllers/dummy")
+// const { req_log } = require("../controllers/dummy")
 const authController = require("../controllers/auth")
 
 router.route("/signin").post(
-  req_log,
+  // req_log,
   validateBody(auth.userSchema.signIn),
   auth.passport.local,
   authController.signIn

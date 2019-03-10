@@ -1,12 +1,11 @@
 "use strict"
 
 const router = require("express-promise-router")()
-// ?? const validateBody = require("../helpers/validateBody")
+const { validateParams } = require("../helpers/schema")
 
 const { passport } = require("ffba-auth")
-
 const sales = require("../controllers/sales")
-// const { req_log } = require("../controllers/dummy")
+const { dayOrgSales, dayPosSales } = require("../schemas/sales")
 
 
 router.route("/daily-totals-for-period").get(
@@ -16,15 +15,17 @@ router.route("/daily-totals-for-period").get(
 )
 
 
-router.route("/day/:year/:mon/:day/org/:orgId").get(
+router.route("/day/:year-:mon-:day/org/:orgId").get(
   // req_log,
+  validateParams(dayOrgSales),
   passport.JWT,
   sales.day_org_sales
 )
 
 
-router.route("/day/:year/:mon/:day/pos/:posId").get(
+router.route("/day/:year-:mon-:day/pos/:posId").get(
   // req_log,
+  validateParams(dayPosSales),
   passport.JWT,
   sales.day_pos_sales
 )
