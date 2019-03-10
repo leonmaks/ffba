@@ -1,4 +1,4 @@
-DROP VIEW IF EXISTS v$_ffba_orgunit_sales;
+DROP VIEW IF EXISTS v$_ffba_orgunit_sales CASCADE;
 
 CREATE VIEW v$_ffba_orgunit_sales AS
 SELECT
@@ -16,8 +16,8 @@ SELECT
   s.discount_value,
   s.discount_rate,
   s.payment,
-  p.identity,
-  p.id,
+  p.pos_ident,
+  p.pos_id,
   p.show_order AS pos_show_order,
   o.id AS orgunit_id,
   o.name AS orgunit_name,
@@ -32,7 +32,7 @@ LEFT JOIN
   ON p.siteguid = s.siteguid
 LEFT OUTER JOIN
   ffba_pos_orgunit_ver ov
-  ON p.id = ov.pos_id
+  ON p.pos_id = ov.pos_id
     AND s.sales_date BETWEEN ov.fd AND COALESCE(ov.td, '9999-12-31 23:59:59.999999')
 LEFT OUTER JOIN
   ffba_orgunit o
