@@ -1,4 +1,4 @@
-DROP VIEW IF EXISTS v$_ffba_orgunit_sales;
+DROP VIEW IF EXISTS v$_ffba_orgunit_sales CASCADE;
 
 CREATE VIEW v$_ffba_orgunit_sales AS
 SELECT
@@ -23,8 +23,8 @@ SELECT
   o.name AS orgunit_name,
   o.up_id AS orgunit_up_id,
   o.show_order orgunit_show_order,
-  ov.fd AS orgunit_fd,
-  ov.td AS orgunit_td
+  ov.fd AS pos_orgunit_fd,
+  ov.td AS pos_orgunit_td
 FROM
   v$_ffba_product_sales s
 LEFT JOIN

@@ -5,15 +5,36 @@ const router = require("express-promise-router")()
 
 const { passport } = require("ffba-auth")
 
-const salesController = require("../controllers/sales")
+const sales = require("../controllers/sales")
 // const { req_log } = require("../controllers/dummy")
 
 
 router.route("/daily-totals-for-period").get(
   // req_log,
   passport.JWT,
-  salesController.daily_totals_for_period
+  sales.daily_totals_for_period
+)
+
+
+router.route("/day/:year/:mon/:day/org/:orgId").get(
+  // req_log,
+  passport.JWT,
+  sales.day_org_sales
+)
+
+
+router.route("/day/:year/:mon/:day/pos/:posId").get(
+  // req_log,
+  passport.JWT,
+  sales.day_pos_sales
 )
 
 
 module.exports = router
+
+
+
+
+// date-cashreg/2019/3/10/5/
+// un_.link = "/sales/date-pos/" + r["sales_date"].replace(/-/g, "/") + "/" + r["pos_id"]
+// { year: '2019', mon: '03', day: '10', orgId: '1' }
