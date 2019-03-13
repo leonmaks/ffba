@@ -8,7 +8,7 @@ import * as serviceWorker from "serviceWorker"
 import store from "reducers"
 
 import {
-  ROUTE_SALES,
+  sales,
   ROUTE_ADMIN_USERS,
   ROUTE_SIGNIN,
   ROUTE_ABOUT
@@ -22,6 +22,9 @@ import Users from "components/admin/Users"
 
 import Sales from "components/sales"
 // import DailyTotals from "components/sales/DailyTotals"
+
+import DayOrgSales from "components/sales/DayOrgSales"
+
 import SignIn from "components/auth/SignIn"
 
 import About from "components/About"
@@ -47,7 +50,8 @@ ReactDOM.render(
       <App>
         <Switch>
           <Route path={ROUTE_ADMIN_USERS} component={Users} exact />
-          <Route path={ROUTE_SALES} component={Sales} exact />
+          <Route path={sales.TOP} component={Sales} exact />
+          <Route path={sales.DAY_ORG_SALES} component={DayOrgSales} exact />
           <Route path={ROUTE_ABOUT} component={About} exact />
           <Route path={ROUTE_SIGNIN} component={SignIn} exact />
           <Route path="/" component={Home} exact />

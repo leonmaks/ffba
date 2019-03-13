@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import Allow from "components/common/Allow"
-import { ROUTE_SALES } from "routes"
+// import Allow from "components/common/Allow"
+import { sales } from "routes"
 
 
 export default props => (
   <li className="nav-item">
-    <Link className="nav-link" to={ROUTE_SALES}>Sales</Link>
+    <Link className="nav-link" to={sales.TOP}>Sales</Link>
   </li>
 )
 

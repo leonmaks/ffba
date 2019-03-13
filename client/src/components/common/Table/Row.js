@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
 
-import Dummy from "components/common/Dummy"
+import Mux from "components/common/Mux"
 
 import Cell from "./Cell"
 import Rows from "./Rows"
@@ -43,10 +43,10 @@ class Row extends Component {
     }
 
     return (
-      <Dummy>
+      <Mux>
         {tr_}
         {group_}
-      </Dummy>
+      </Mux>
     )
   }
 }

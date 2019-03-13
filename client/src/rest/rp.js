@@ -20,7 +20,7 @@ export const get = async (route, params) => {
   const auth_headers_ = __compose_auth_headers()
 
   // TODO: ---:
-  console.log("rest/rp GET: auth_headers=", auth_headers_)
+  // console.log("rest/rp GET: auth_headers=", auth_headers_)
 
   const options_ = {
     uri: `${SERVER_URL}${route}`,
@@ -31,11 +31,13 @@ export const get = async (route, params) => {
     json: params.json || false,
   }
 
+  // console.log("options=", options_)
+
   // request to server - wait
   const res_ = await rp(options_)
 
   // TODO: ---:
-  console.log("rest/rp GET: res=", res_)
+  // console.log("rest/rp GET: res=", res_)
 
   return res_
 }

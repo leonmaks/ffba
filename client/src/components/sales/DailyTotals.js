@@ -1,9 +1,9 @@
 import React, { Component } from "react"
 import { get } from "rest/rp"
 
-import { SALES_DAILY_TOTALS_FOR_PERIOD } from "rest/defs"
+import { sales } from "rest/defs"
 
-import Dummy from "components/common/Dummy"
+import Mux from "components/common/Mux"
 import Table from "components/common/Table"
 
 
@@ -62,7 +62,7 @@ class DailyTotals extends Component {
           pm_.rows = []
         }
         un_.ident = r["unit_ident"]
-        un_.link = "/sales/date-pos/" + r["sales_date"].replace(/-/g, "/") + "/" + r["pos_id"]
+        un_.link = "/sales/day/" + r["sales_date"] + "/org/" + r["orgunit_id"]
         un_.totals = [0, 0, 0]
       }
 
@@ -148,7 +148,7 @@ class DailyTotals extends Component {
 
   componentDidMount() {
 
-    get(SALES_DAILY_TOTALS_FOR_PERIOD, { json: true }).then(res => {
+    get(sales.DAILY_TOTALS_FOR_PERIOD, { json: true }).then(res => {
       if (res.daily_totals) {
         this.setState({ totals: this.prepareState(res.daily_totals) })
       }
@@ -195,12 +195,12 @@ class DailyTotals extends Component {
     }
 
     return (
-      <Dummy>
+      <Mux>
         <h1>Totals by Date</h1>
         <div className="table-responsive">
           <Table classes={data.totals.classes} headings={data.totals.headings} rows={this.state.totals.rows} />
         </div>
-      </Dummy>
+      </Mux>
     )
   }
 }

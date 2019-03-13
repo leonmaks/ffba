@@ -1,7 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
 
-import Dummy from "components/common/Dummy"
+import Mux from "components/common/Mux"
 
 
 const Allow = props => {
@@ -13,9 +13,9 @@ const Allow = props => {
   }
 
   return (
-    <Dummy>
+    <Mux>
       {allow_ && props.children}
-    </Dummy>
+    </Mux>
   )
 }
 

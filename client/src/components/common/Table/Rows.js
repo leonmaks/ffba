@@ -1,6 +1,6 @@
 import React from "react"
 
-import Dummy from "components/common/Dummy"
+import Mux from "components/common/Mux"
 
 import Row from "./Row"
 
@@ -16,9 +16,9 @@ export default props => {
   }
 
   return (
-    <Dummy>
+    <Mux>
       {rows_}
-    </Dummy>
+    </Mux>
   )
 }
 

@@ -20,7 +20,7 @@ export const restoreAuthCtx = () => {
   const data_ = JSON.parse(window.localStorage.getItem(LOCAL_STORAGE_KEY))
   if (data_) {
     // TODO: ---:
-    console.log("restore from LOCAL STORAGE", data_)
+    // console.log("restore from LOCAL STORAGE", data_)
   }
   return data_
 }

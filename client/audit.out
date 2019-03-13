@@ -1,0 +1,954 @@
+D:\dev\ffba\client>npm install
+npm WARN deprecated kleur@2.0.2: Please upgrade to kleur@3 or migrate to 'ansi-colors' if you prefer the old syntax. Visit <https://github.com/lukeed/kleur/releases/tag/v3.0.0\> for migration path(s).
+
+> final-form@4.12.0 postinstall D:\dev\ffba\client\node_modules\final-form
+> node -e "console.log('\u001b[35m\u001b[1mUsing final-form at work? You can now donate to our open collective:\u001b[22m\u001b[39m\n > \u001b[34mhttps://opencollective.com/final-form/donate\u001b[0m')"
+
+Using final-form at work? You can now donate to our open collective:
+ > https://opencollective.com/final-form/donate
+
+> react-final-form@4.1.0 postinstall D:\dev\ffba\client\node_modules\react-final-form
+> node -e "console.log('\u001b[35m\u001b[1mUsing react-final-form at work? You can now donate to our open collective:\u001b[22m\u001b[39m\n > \u001b[34mhttps://opencollective.com/final-form/donate\u001b[0m')"
+
+Using react-final-form at work? You can now donate to our open collective:
+ > https://opencollective.com/final-form/donate
+
+> styled-components@4.1.3 postinstall D:\dev\ffba\client\node_modules\styled-components
+> node ./scripts/postinstall.js || exit 0
+
+Use styled-components at work? Consider supporting our development efforts at https://opencollective.com/styled-components
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN ts-pnp@1.0.1 requires a peer of typescript@* but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.7 (node_modules\chokidar\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+added 1895 packages from 770 contributors and audited 36434 packages in 227.313s
+found 63 low severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+D
+
+
+
+[90m                                                                                [39m
+[90m [39m                      === npm audit security report ===                       [90m [39m
+[90m                                                                                [39m
+[90m                                                                                [39m
+[90m [39m                                Manual Review                                 [90m [39m
+[90m [39m            Some vulnerabilities require your attention to resolve            [90m [39m
+[90m [39m                                                                              [90m [39m
+[90m [39m         Visit https://go.npm.me/audit-guide for additional guidance          [90m [39m
+[90m                                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > babel-jest > babel-plugin-istanbul >         [90m [39m
+[90m [39m               [90m [39m test-exclude > micromatch > braces                           [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-config > babel-jest > [90m [39m
+[90m [39m               [90m [39m babel-plugin-istanbul > test-exclude > micromatch > braces   [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-config >              [90m [39m
+[90m [39m               [90m [39m jest-environment-jsdom > jest-util > jest-message-util >     [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-config >              [90m [39m
+[90m [39m               [90m [39m jest-environment-node > jest-util > jest-message-util >      [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-config >              [90m [39m
+[90m [39m               [90m [39m jest-jasmine2 > expect > jest-message-util > micromatch >    [90m [39m
+[90m [39m               [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-config >              [90m [39m
+[90m [39m               [90m [39m jest-jasmine2 > jest-message-util > micromatch > braces      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-config >              [90m [39m
+[90m [39m               [90m [39m jest-jasmine2 > jest-snapshot > jest-message-util >          [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-config >              [90m [39m
+[90m [39m               [90m [39m jest-jasmine2 > jest-util > jest-message-util > micromatch > [90m [39m
+[90m [39m               [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-config > jest-util >  [90m [39m
+[90m [39m               [90m [39m jest-message-util > micromatch > braces                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-config > micromatch > [90m [39m
+[90m [39m               [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-environment-jsdom >   [90m [39m
+[90m [39m               [90m [39m jest-util > jest-message-util > micromatch > braces          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-haste-map >           [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-message-util >        [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-resolve-dependencies  [90m [39m
+[90m [39m               [90m [39m > jest-snapshot > jest-message-util > micromatch > braces    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-config  [90m [39m
+[90m [39m               [90m [39m > babel-jest > babel-plugin-istanbul > test-exclude >        [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-config  [90m [39m
+[90m [39m               [90m [39m > jest-environment-jsdom > jest-util > jest-message-util >   [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-config  [90m [39m
+[90m [39m               [90m [39m > jest-environment-node > jest-util > jest-message-util >    [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-config  [90m [39m
+[90m [39m               [90m [39m > jest-jasmine2 > expect > jest-message-util > micromatch >  [90m [39m
+[90m [39m               [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-config  [90m [39m
+[90m [39m               [90m [39m > jest-jasmine2 > jest-message-util > micromatch > braces    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-config  [90m [39m
+[90m [39m               [90m [39m > jest-jasmine2 > jest-snapshot > jest-message-util >        [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-config  [90m [39m
+[90m [39m               [90m [39m > jest-jasmine2 > jest-util > jest-message-util > micromatch [90m [39m
+[90m [39m               [90m [39m > braces                                                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-config  [90m [39m
+[90m [39m               [90m [39m > jest-util > jest-message-util > micromatch > braces        [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-config  [90m [39m
+[90m [39m               [90m [39m > micromatch > braces                                        [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner >              [90m [39m
+[90m [39m               [90m [39m jest-haste-map > micromatch > braces                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner >              [90m [39m
+[90m [39m               [90m [39m jest-jasmine2 > expect > jest-message-util > micromatch >    [90m [39m
+[90m [39m               [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner >              [90m [39m
+[90m [39m               [90m [39m jest-jasmine2 > jest-message-util > micromatch > braces      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner >              [90m [39m
+[90m [39m               [90m [39m jest-jasmine2 > jest-snapshot > jest-message-util >          [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner >              [90m [39m
+[90m [39m               [90m [39m jest-jasmine2 > jest-util > jest-message-util > micromatch > [90m [39m
+[90m [39m               [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner >              [90m [39m
+[90m [39m               [90m [39m jest-message-util > micromatch > braces                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > babel-plugin-istanbul > test-exclude > micromatch > braces [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > jest-config > babel-jest > babel-plugin-istanbul >         [90m [39m
+[90m [39m               [90m [39m test-exclude > micromatch > braces                           [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > jest-config > jest-environment-jsdom > jest-util >         [90m [39m
+[90m [39m               [90m [39m jest-message-util > micromatch > braces                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > jest-config > jest-environment-node > jest-util >          [90m [39m
+[90m [39m               [90m [39m jest-message-util > micromatch > braces                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > jest-config > jest-jasmine2 > expect > jest-message-util > [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > jest-config > jest-jasmine2 > jest-message-util >          [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > jest-config > jest-jasmine2 > jest-snapshot >              [90m [39m
+[90m [39m               [90m [39m jest-message-util > micromatch > braces                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > jest-config > jest-jasmine2 > jest-util >                  [90m [39m
+[90m [39m               [90m [39m jest-message-util > micromatch > braces                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > jest-config > jest-util > jest-message-util > micromatch > [90m [39m
+[90m [39m               [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > jest-config > micromatch > braces                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > jest-haste-map > micromatch > braces                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > jest-message-util > micromatch > braces                    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > jest-snapshot > jest-message-util > micromatch > braces    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > jest-util > jest-message-util > micromatch > braces        [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-runtime [90m [39m
+[90m [39m               [90m [39m > micromatch > braces                                        [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runner > jest-util >  [90m [39m
+[90m [39m               [90m [39m jest-message-util > micromatch > braces                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime >             [90m [39m
+[90m [39m               [90m [39m babel-plugin-istanbul > test-exclude > micromatch > braces   [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime > jest-config [90m [39m
+[90m [39m               [90m [39m > babel-jest > babel-plugin-istanbul > test-exclude >        [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime > jest-config [90m [39m
+[90m [39m               [90m [39m > jest-environment-jsdom > jest-util > jest-message-util >   [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime > jest-config [90m [39m
+[90m [39m               [90m [39m > jest-environment-node > jest-util > jest-message-util >    [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime > jest-config [90m [39m
+[90m [39m               [90m [39m > jest-jasmine2 > expect > jest-message-util > micromatch >  [90m [39m
+[90m [39m               [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime > jest-config [90m [39m
+[90m [39m               [90m [39m > jest-jasmine2 > jest-message-util > micromatch > braces    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime > jest-config [90m [39m
+[90m [39m               [90m [39m > jest-jasmine2 > jest-snapshot > jest-message-util >        [90m [39m
+[90m [39m               [90m [39m micromatch > braces                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime > jest-config [90m [39m
+[90m [39m               [90m [39m > jest-jasmine2 > jest-util > jest-message-util > micromatch [90m [39m
+[90m [39m               [90m [39m > braces                                                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime > jest-config [90m [39m
+[90m [39m               [90m [39m > jest-util > jest-message-util > micromatch > braces        [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime > jest-config [90m [39m
+[90m [39m               [90m [39m > micromatch > braces                                        [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime >             [90m [39m
+[90m [39m               [90m [39m jest-haste-map > micromatch > braces                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime >             [90m [39m
+[90m [39m               [90m [39m jest-message-util > micromatch > braces                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime >             [90m [39m
+[90m [39m               [90m [39m jest-snapshot > jest-message-util > micromatch > braces      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime > jest-util > [90m [39m
+[90m [39m               [90m [39m jest-message-util > micromatch > braces                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-runtime > micromatch  [90m [39m
+[90m [39m               [90m [39m > braces                                                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-snapshot >            [90m [39m
+[90m [39m               [90m [39m jest-message-util > micromatch > braces                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > jest-util >                [90m [39m
+[90m [39m               [90m [39m jest-message-util > micromatch > braces                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m braces                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Patched in    [90m [39m >=2.3.1                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m react-scripts                                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m react-scripts > jest > jest-cli > micromatch > braces        [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/786                             [90m [39m
+[90m                [39m[90m                                                                [39m
+found 63 low severity vulnerabilities in 36434 scanned packages
+  63 vulnerabilities require manual review. See the full report for details.
