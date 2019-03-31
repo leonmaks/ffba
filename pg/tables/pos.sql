@@ -27,4 +27,5 @@ CREATE TABLE IF NOT EXISTS ffba_pos_file (
     CONSTRAINT ffba_pos_file_pk PRIMARY KEY (id),
     CONSTRAINT ffba_pos_file_pos_fk FOREIGN KEY (pos_id) REFERENCES ffba_pos(id) DEFERRABLE INITIALLY DEFERRED
 );
+
 CREATE INDEX ffba_pos_file_pos_fk_i ON ffba_pos_file USING btree (pos_id);
